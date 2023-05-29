@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+input {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    outline: none;
+    font-size: 12pt;
+}
+#wys:hover {
+    background-color:rgb(124, 124, 124);
+}
+.df {
+    text-align: center;
+    width: 100%;
+}
+body {
+    background-color: rgb(255, 199, 108);
+}
+label {
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+}
+legend {
+    background-color: rgb(124, 114, 255);
+    color: black;
+    text-align: center;
+}
+fieldset {
+    width: 600px;
+    padding: 50px;
+    border-radius: 50px;
+    display: grid;
+    gap: 15px;
+    margin:auto;
+}
+#cont {
+    text-align: center;
+}
+#tab {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+tr {
+    width: 50px;
+}
+select {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    outline: none;
+    font-size: 12pt;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+option {
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type="checkbox"] {
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+}
+
+input[type="radio"] {
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+}

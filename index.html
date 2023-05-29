@@ -1,0 +1,116 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 7 i 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cont">
+        <fieldset>
+            <legend>Formularz</legend>
+            <div class="df"><label>Imie:</label></div>
+            <div class="df">
+                <input type="text" class="do_wal"><br>
+            </div>
+            <div class="df"><label>Nazwisko:</label></div>
+            <div class="df">
+                <input type="text" class="do_wal"><br>
+            </div>
+            <div class="df"><label>E-mail</label></div>
+            <div class="df">
+                  <input type="text" class="do_wal"><br>
+            </div>
+            <div class="df"><label>Hasło</label></div>
+            <div class="df">
+                 <input type="password" class="do_wal"><br>
+                 <p id="wiad"></p>
+            </div>
+            <div class="df"><label>Powtórz hasło</label></div>
+            <div class="df">
+                 <input type="password" class="do_wal"><br>
+            </div>
+            <div class="df"><label>Płeć</label></div>
+            <div class="df">
+                <table id="tab">
+                    <tr>
+                        <td>Mężczyzna</td>
+                        <td>Kobieta</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="plec" id="m"></td>
+                        <td><input type="radio" name="plec" id="k"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="df"><label>Telefon</label></div>
+            <div class="df">
+                <input type="text" class="do_wal"><br>
+            </div>
+            <div class="df"><label>Data urodzenia</label></div>
+            <div class="df">
+                <input type="date" min="2000-01-01" value="2024-01-01" max="2018-12-31" class="do_wal"><br>
+            </div>
+            <div class="df"><label>Kraj</label></div>
+            <div class="df">
+                <select class="do_wal" id="krajInput" onchange="zmienPoleWojewodztwo()">
+                    <option value="">Wybierz kraj</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Belgium">Belgia</option>
+                    <option value="Bulgaria">Bułgaria</option>
+                    <option value="Croatia">Chorwacja</option>
+                    <option value="Cyprus">Cypr</option>
+                    <option value="Czech Republic">Czechy</option>
+                    <option value="Denmark">Dania</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Finland">Finlandia</option>
+                    <option value="France">Francja</option>
+                    <option value="Germany">Niemcy</option>
+                    <option value="Greece">Grecja</option>
+                    <option value="Hungary">Węgry</option>
+                    <option value="Iceland">Islandia</option>
+                    <option value="Ireland">Irlandia</option>
+                    <option value="Italy">Włochy</option>
+                    <option value="Latvia">Łotwa</option>
+                    <option value="Lithuania">Litwa</option>
+                    <option value="Luxembourg">Luksemburg</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Netherlands">Holandia</option>
+                    <option value="Norway">Norwegia</option>
+                    <option value="Poland">Polska</option>
+                    <option value="Portugal">Portugalia</option>
+                    <option value="Romania">Rumunia</option>
+                    <option value="Slovakia">Słowacja</option>
+                    <option value="Slovenia">Słowenia</option>
+                    <option value="Spain">Hiszpania</option>
+                    <option value="Sweden">Szwecja</option>
+                    <option value="Switzerland">Szwajcaria</option>
+                    <option value="United Kingdom">Wielka Brytania</option>
+                  </select><br>
+            </div>
+            <div class="df"><label>Województwo</label></div>
+            <div class="df" id="wojewodztwoContainer">
+                <input type="text" class="do_wal" disabled><br>
+            </div>
+            <div class="df"><label>Adres zamieszkania</label></div>
+            <div class="df">
+                <input type="text" id="adresZamieszkaniaInput" class="do_wal" disabled><br>
+            </div>
+            <div class="df">
+                <label for="adresCheckbox">Adres korespondencyjny taki sam jak adres zamieszkania</label><br><br>
+                <input type="checkbox" id="adresCheckbox" onchange="pokazUkryjAdres()" checked /><br><br>
+                <div id="adresKorespondencyjny" style="display: none;">
+                    <label for="adresKorespondencyjnyInput">Adres korespondencyjny:</label><br><br>
+                    <input type="text" id="adresKorespondencyjnyInput" disabled />
+                  </div>
+            </div>
+            <div class="df"><label>Zapisz swój postęp</label></div>
+            <div class="df">
+                <input id="wys" type="button" value="Zapisz" onclick="waliduj()"><br>
+                <p id="ostat"></p>   
+            </div>
+        </fieldset>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
